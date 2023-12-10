@@ -1,0 +1,62 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    background-image: url(../image/photo1702195423\ \(2\).jpeg);
+
+}
+
+.gradient-custom {
+    position: relative;
+}
+
+.gradient-custom:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+.gradient-custom:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    -webkit-transform:translateZ(0) scale(1.0,1.0) ;
+    -moz-transform:translateZ(0) scale(1.0,1.0) ;
+    -ms-transform:translateZ(0) scale(1.0,1.0) ;
+    -o-transform:translateZ(0) scale(1.0,1.0) ;
+    transform:translateZ(0) scale(1.0,1.0) ;
+    background-image: url(../image/photo1702195423\ \(1\).jpeg);
+
+    -webkit-background-size:cover;
+    background-size:cover ;
+    background-attachment: fixed ;
+    animation: increase 40s linear 10ms infinite;
+    
+
+    -webkit-transition: all 03s ease-in-out ;
+    -ms-transition: all 03s ease-in-out ;
+    -o-transition: all 03s ease-in-out ;
+    transition: all 03s ease-in-out ;
+
+    z-index: -2;
+}
+
+@keyframes increase{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
